@@ -1,0 +1,243 @@
+/* dashboard.css */
+
+/* Variables de color y tipografía */
+:root {
+  --primary-color: #40739e;
+  --secondary-color: #353b48;
+  --bg-color: #f5f6fa;
+  --text-color: #333;
+  --light-text: #fff;
+  --font-family: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--bg-color);
+  color: var(--text-color);
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Disposición principal */
+.dashboard {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  height: 100%;
+}
+
+/* Barra lateral */
+.sidebar {
+  background: var(--secondary-color);
+  color: var(--light-text);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+}
+
+.sidebar__logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sidebar__nav ul {
+  list-style: none;
+}
+
+.sidebar__nav li {
+  margin-bottom: 1.25rem;
+}
+
+.sidebar__nav a {
+  color: var(--light-text);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.sidebar__nav .active a,
+.sidebar__nav a:hover {
+  background: var(--primary-color);
+}
+
+.sidebar__resources {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+}
+
+.sidebar__resources p {
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.sidebar__resources ul {
+  list-style: none;
+}
+
+.sidebar__resources li {
+  margin-bottom: 1rem;
+}
+
+.sidebar__resources .has-submenu .submenu {
+  list-style: none;
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+.sidebar__resources .submenu li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar__footer {
+  margin-top: auto;
+  text-align: center;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.user-profile img {
+  border-radius: 50%;
+}
+
+.logout-btn {
+  background: transparent;
+  border: 1px solid #e84118;
+  color: #e84118;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+}
+
+.logout-btn:hover {
+  background: #e84118;
+  color: var(--light-text);
+}
+
+/* Contenido principal */
+.main-content {
+  overflow-y: auto;
+  padding: 2rem;
+}
+
+/* Cabecera de bienvenida */
+.main-content__header {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Cursos en progreso */
+.progress-courses {
+  margin-top: 2rem;
+}
+
+.course-list {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.course-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.course-card button {
+  background: var(--primary-color);
+  color: var(--light-text);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.course-card button:hover {
+  background: darken(var(--primary-color), 10%);
+}
+
+/* Tabla de fechas límite */
+.deadlines {
+  margin-top: 2.5rem;
+}
+
+.deadlines table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.deadlines th,
+.deadlines td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.deadlines thead {
+  background: var(--primary-color);
+  color: var(--light-text);
+}
+
+.deadlines tbody tr:hover {
+  background: #f1f2f6;
+}
+
+/* Recomendaciones y anuncios */
+.recommendations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.recommended,
+.announcements {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recommended ul,
+.announcements ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.recommended li,
+.announcements li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.recommended li:last-child,
+.announcements li:last-child {
+  border-bottom: none;
+}	

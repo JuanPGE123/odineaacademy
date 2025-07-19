@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel de Usuario</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="sidebar__logo">Dashboard</div>
+      <nav class="sidebar__nav">
+        <ul>
+          <li class="active">
+            <a href="#"><i class="fas fa-home"></i><span>Panel</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-book"></i><span>Mis Cursos</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-calendar-alt"></i><span>Calendario</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-envelope"></i><span>Mensajes</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-tasks"></i><span>Tareas</span></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar__resources">
+        <p>Recursos</p>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-question-circle"></i><span>Centro de Ayuda</span></a>
+          </li>
+          <li class="has-submenu">
+            <a href="#"><i class="fas fa-cog"></i><span>Configuración</span></a>
+            <ul class="submenu">
+              <li><a href="#">Actualización de Datos</a></li>
+              <li><a href="#">Cursos Pagados</a></li>
+              <li><a href="#">Opciones Avanzadas</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <footer class="sidebar__footer">
+        <div class="user-profile">
+          <img src="https://via.placeholder.com/40" alt="Usuario">
+          <div>
+            <p>Administrador</p>
+            <span>Estudiante</span>
+          </div>
+        </div>
+        <button id="logout-btn" class="logout-btn">
+          <i class="fas fa-sign-out-alt"></i>Cerrar Sesión
+        </button>
+      </footer>
+    </aside>
+
+    <main class="main-content">
+      <header class="main-content__header">
+        <h1>¡Bienvenido de nuevo, Administrador!</h1>
+        <p>Continúa donde lo dejaste</p>
+      </header>
+
+      <section class="progress-courses">
+        <h2>En Progreso</h2>
+        <div class="course-list">
+          <div class="course-card">
+            <p>75% COMPLETADO</p>
+            <h3>Curso de Prueba 1</h3>
+            <p>Próxima lección: Prueba de Continuación 1</p>
+            <button>Continuar</button>
+          </div>
+          <div class="course-card">
+            <p>42% COMPLETADO</p>
+            <h3>Curso de Prueba 2</h3>
+            <p>Próxima lección: Prueba de Continuación 2</p>
+            <button>Continuar</button>
+          </div>
+          <div class="course-card">
+            <p>18% COMPLETADO</p>
+            <h3>Curso de Prueba 3</h3>
+            <p>Próxima lección: Prueba de Continuación 3</p>
+            <button>Continuar</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="deadlines">
+        <h2>Fechas Límite Próximas</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Actividad</th>
+              <th>Detalle</th>
+              <th>Vence</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><i class="fas fa-file-code"></i>Proyecto 1</td>
+              <td>Tarea de prueba</td>
+              <td>En 2 días</td>
+              <td><i class="fas fa-eye"></i></td>
+            </tr>
+            <tr>
+              <td><i class="fas fa-chart-bar"></i>Quiz 1</td>
+              <td>Tarea de prueba 2</td>
+              <td>Mañana</td>
+              <td><i class="fas fa-eye"></i></td>
+            </tr>
+            <tr>
+              <td><i class="fas fa-comments"></i>Foro</td>
+              <td>Tarea de prueba 3</td>
+              <td>En 5 días</td>
+              <td><i class="fas fa-eye"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="recommendations">
+        <div class="recommended">
+          <h2>Cursos Recomendados</h2>
+          <ul>
+            <li>
+              <strong>Curso recomendado 1</strong><br>
+              Frase motivadora 1
+            </li>
+            <li>
+              <strong>Curso recomendado 2</strong><br>
+              Frase motivadora 2
+            </li>
+            <li>
+              <strong>Curso recomendado 3</strong><br>
+              Frase motivadora 3
+            </li>
+            <li>
+              <strong>Curso recomendado 4</strong><br>
+              Frase motivadora 4
+            </li>
+          </ul>
+        </div>
+        <div class="announcements">
+          <h2>Anuncios</h2>
+          <ul>
+            <li><i class="fas fa-bullhorn"></i> Nueva actualización de la plataforma el 20 de abril</li>
+            <li><i class="fas fa-star"></i> ¡Felicidades a los estudiantes destacados del mes!</li>
+            <li><i class="fas fa-calendar-check"></i> Revisa tu calendario semanal</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

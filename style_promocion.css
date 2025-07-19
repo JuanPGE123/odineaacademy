@@ -1,0 +1,153 @@
+/* Modal Pack */
+#packModal .modal-content {
+  background: linear-gradient(145deg, #fff0f6, #fbe0ec);
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #d81b60;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(245, 164, 203, 0.6);
+  animation: fadeIn 0.4s ease;
+  position: relative;
+}
+
+#packModal .pack-header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#packModal .pack-header h2 {
+  font-size: 1.5rem;
+  color: #d81b60;
+  margin: 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f8bbd0;
+  display: inline-block;
+}
+
+#packModal .pack-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+#packModal .benefit-card {
+  flex: 1 1 calc(50% - 15px);
+  min-width: 150px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #f8bbd0;
+  text-align: center;
+}
+
+#packModal .benefit-icon {
+  color: #d81b60;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+#packModal .benefit-text {
+  font-size: 0.8rem;
+  color: #4d0039;
+}
+
+#packModal .pack-list {
+  columns: 2;
+  column-gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#packModal .pack-list li {
+  font-size: 0.85rem;
+  margin: 4px 0;
+  padding-left: 18px;
+  position: relative;
+  line-height: 1.3;
+  break-inside: avoid;
+  color: #4d0039;
+}
+
+#packModal .pack-list li:before {
+  content: "•";
+  color: #d81b60;
+  position: absolute;
+  left: 5px;
+  font-weight: bold;
+}
+
+#packModal .price-container {
+  background: #fff9fb;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0;
+  text-align: center;
+  border: 1px dashed #d81b60;
+}
+
+#packModal .pack-price {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #666;
+}
+
+#packModal .pack-price-offer {
+  font-size: 1.3rem;
+  margin: 5px 0;
+  color: #d81b60;
+  font-weight: bold;
+}
+
+#packModal .time-left {
+  font-size: 0.8rem;
+  color: #d81b60;
+  font-style: italic;
+  margin: 5px 0;
+}
+
+#packModal .guarantee-badge {
+  background: #d81b60;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+#packModal .pay-now {
+  display: block;
+  width: 100%;
+  margin: 15px auto 5px;
+  padding: 12px;
+  font-size: 1rem;
+  background: linear-gradient(to right, #d81b60, #e75480);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#packModal .pay-now:hover {
+  transform: scale(1.02);
+}
+
+#packModal .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  color: #999;
+  cursor: pointer;
+}
+
+#packModal .close:hover {
+  color: #d81b60;
+}
