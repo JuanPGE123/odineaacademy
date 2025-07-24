@@ -1,9 +1,10 @@
 /*GIF NOMBRE DE PAGINA*/
 
 .animated-icon {
-    margin-right: 10px;
-    animation: spin 2s linear infinite;
-    color: #ff4747; /* Puedes cambiar el color */
+    font-size: 3.5rem; /* Aumenta según lo que quieras destacar */
+  color: #f272b8; /* rosado suave */
+  margin-right: 0.5rem;
+  animation: spin 4s linear infinite;
 }
 
 /*TITULO Y SUBTITULO DE PAGINA*/
@@ -12,7 +13,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 0.6rem;
+  justify-content: center;
+  margin: 2rem 0;
+  font-family: 'Playfair Display', serif;
+  color: #2d223d; /* negro azulado elegante */
 }
 
 .titulo-principal .icono {
@@ -23,9 +28,12 @@
 
 
 .titulo-principal h1 {
-  font-size: 4.4rem; /* Más grande para destacar */
-  margin: 0;
-  color: #fff;
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #5e3b77; /* violeta elegante */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  margin-bottom: 0.2rem;
 }
 
 .titulo-con-subtitulo {
@@ -33,16 +41,18 @@
 }
 
 .titulo-principal i {
-  color: #e75480;
+  color: #E75495;
   font-size: 1.8rem;
   animation: spin 4s linear infinite;
 }
 
 .subtitulo {
   font-size: 1rem;
-  color: #e75480;
+  color: #E75495;
   font-style: italic;       /* cursiva para toque femenino */
-  margin-top: 2px; 
+  margin-top: 0.2rem;
+  margin-bottom: 2rem;
+  font-family: 'Playfair Display', serif;
 }
 
 
@@ -61,7 +71,7 @@ body {
     margin: 0;
     padding: 0;
     background: #f8f9fa;
-    color: #333;
+    color: #D9D9D9;
 }
 
 .container {
@@ -72,7 +82,7 @@ body {
 
 /* Encabezado */
 header {
-  background: linear-gradient(90deg, #23228f 0%, #4a3bb3 100%);
+  background: linear-gradient(90deg, #1A132F 0%, #4B2C6F 100%);
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -125,7 +135,7 @@ header h1 {
 
 /* Estilo del botón de Iniciar Sesión */
 .btn-login {
-  background-color: #e75480;
+  background-color: #E75495;
   color: #fff;
   padding: 8px 16px;
   border-radius: 20px;
@@ -135,19 +145,19 @@ header h1 {
 }
 
 .btn-login:hover {
-  background-color: #bf4168;
+  background-color: #A67DE5;
   transform: scale(1.05);
 }
 
 /* Estilo del botón de Suscribirse */
 .btn-register {
-    background: #ff5733;
+    background: #A67DE5;
     color: white;
     border: none;
 }
 
 .btn-register:hover {
-    background: #e74c3c;
+    background: #E75495;
 }
 
 header h1 {
@@ -176,7 +186,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #e75480;
+  background-color: #E75495;
   color: #fff;
   transform: scale(1.05);
 }
@@ -246,7 +256,7 @@ nav ul li a:hover {
 .hero .btn {
     display: inline-block;
     padding: 10px 20px;
-    background: #ff5733;
+    background: #A67DE5;
     color: #fff;
     text-decoration: none;
     margin-top: 10px;
@@ -267,7 +277,7 @@ nav ul li a:hover {
 .info-intercambiable {
   position: relative;
   padding: 60px 20px;
-  background: linear-gradient(135deg, #fff0f8 0%, #23228f 100%);
+  background: linear-gradient(135deg, #fff0f8 0%, #1A132F 100%);
 }
 
 /* Contenedor principal con animación */
@@ -280,7 +290,7 @@ nav ul li a:hover {
   max-width: 1200px;
   margin: 0 auto;
   background: #ffffff;
-  border: 2px solid #23228f;
+  border: 2px solid #1A132F;
   border-radius: 20px;
   padding: 30px;
   box-shadow: 0 8px 25px rgba(215, 112, 147, 0.2);
@@ -302,19 +312,20 @@ nav ul li a:hover {
 .info-text {
   flex: 1;
   min-width: 300px;
-  color: #23228f;
+  color: #1A132F;
+  font-family: 'Playfair Display', serif;
 }
 
 .info-text h3 {
   font-size: 1.8rem;
-  color: #23228f;
+  color: #1A132F;
   margin-bottom: 15px;
   transition: all 0.3s ease;
 }
 
 /* Efecto hover en títulos */
 .info-text h3:hover {
-  color: #23228f;
+  color: #1A132F;
   transform: scale(1.05);
 }
 
@@ -333,7 +344,7 @@ nav ul li a:hover {
   width: 100%;
   height: auto;
   border-radius: 15px;
-  border: 2px solid #23228f;
+  border: 2px solid #1A132F;
   transition: all 0.3s ease;
 }
 
@@ -353,9 +364,9 @@ nav ul li a:hover {
   font-size: 32px;
   margin: 0 20px;
   cursor: pointer;
-  color: #23228f;
+  color: #1A132F;
   background: #fff0f8;
-  border: 2px solid #23228f;
+  border: 2px solid #1A132F;
   border-radius: 50%;
   padding: 10px;
   transition: all 0.3s ease;
@@ -363,7 +374,7 @@ nav ul li a:hover {
 
 .arrow-buttons i:hover {
   transform: scale(1.3);
-  background: #23228f;
+  background: #1A132F;
   color: #fff;
 }
 
@@ -388,8 +399,8 @@ nav ul li a:hover {
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
-  background: #23228f; /* color sólido */
-  border: 2px solid #e75480; /* marco que combine */
+  background: #1A132F; /* color sólido */
+  border: 2px solid #E75495; /* marco que combine */
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 8px 25px rgba(231, 84, 128, 0.3);
@@ -401,6 +412,9 @@ nav ul li a:hover {
   flex: 1;
   min-width: 300px;
   color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Playfair Display', serif;
 }
 
 .promo-text h2 {
@@ -410,7 +424,7 @@ nav ul li a:hover {
 
 .subtitulo-2 {
   font-size: 1.2rem;
-  color: #e75480;
+  color: #E75495;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -422,26 +436,25 @@ nav ul li a:hover {
 }
 
 .descripcion span {
-  color: #e75480;
+  color: #E75495;
   font-weight: bold;
 }
 
 .descripcion-extra {
   font-size: 1rem;
   margin-bottom: 20px;
-  color: #f8c4d9;
+  color: #D9D9D9;
 }
 
 .promo-image {
-  flex: 1;
-  min-width: 300px;
+  display: none;
 }
 
 .promo-image img {
   width: 100%;
   height: auto;
   border-radius: 15px;
-  border: 2px solid #e75480;
+  border: 2px solid #E75495;
   transition: all 0.3s ease;
 }
 
@@ -453,8 +466,8 @@ nav ul li a:hover {
 
 /* Botón llamativo que combine */
 .btn-promo {
-  display: inline-block;
-  background-color: #e75480;
+  display: block;
+  background-color: #E75495;
   color: #fff;
   padding: 12px 25px;
   font-size: 1.1rem;
@@ -462,34 +475,42 @@ nav ul li a:hover {
   border-radius: 30px;
   text-decoration: none;
   transition: all 0.3s ease;
+  margin: 30px auto 0;
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
 }
 
 .btn-promo:hover {
-  background-color: #bf4168;
+  background-color: #A67DE5;
   transform: scale(1.05);
 }
 
 
 .promo-list {
-  display: grid;
+  display: block;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 10px;
   list-style: none;
   padding: 0;
   margin-top: 20px;
+  margin: 20px auto;
+  max-width: 500px;  /* opcional para limitar ancho */
 }
 
 .promo-list li {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid #e75480;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid #E75495;
   border-radius: 10px;
-  padding: 10px 15px;
+  padding: 12px 20px;
   color: #fff;
   font-size: 1rem;
   display: flex;
   align-items: center;
   gap: 8px;
   transition: background 0.3s ease;
+  margin: 10px 0;
+  text-align: left;
 }
 
 .promo-list li:hover {
@@ -509,7 +530,7 @@ nav ul li a:hover {
 /* NUBE CURSO ONLYFANS */
 .nube-curso-onlyfans {
   background: #ffffff; /* fondo rosa muy claro */
-  border: 2px solid #23228f; /* rosa medio para el borde */
+  border: 2px solid #1A132F; /* rosa medio para el borde */
   border-radius: 30px;
   padding: 25px 35px;
   margin: 40px auto;
@@ -517,7 +538,7 @@ nav ul li a:hover {
   text-align: center;
   position: relative;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  color: #23228f; /* tono intenso y femenino */
+  color: #1A132F; /* tono intenso y femenino */
 }
 
 .nube-curso-onlyfans::before {
@@ -527,13 +548,15 @@ nav ul li a:hover {
   left: 50%;
   transform: translateX(-50%);
   font-size: 32px;
-  color: #23228f;
+  color: #1A132F;
 }
 
 .titulo-curso {
   font-size: 1.5rem; /* título más grande */
   font-weight: bold;
   margin: 0;
+  font-family: 'Playfair Display', serif;
+  
 }
 
 
@@ -613,7 +636,7 @@ nav ul li a:hover {
 .course-buttons a {
     text-decoration: none;
     font-size: 16px;
-    color: #333;
+    color: #D9D9D9;
     display: flex;
     align-items: center;
     gap: 5px; /* Espacio entre el icono y el texto */
@@ -626,24 +649,24 @@ nav ul li a:hover {
 
 /* Efecto hover */
 .course-buttons a:hover {
-    color: #ff5733; /* Cambia de color al pasar el mouse */
+    color: #A67DE5; /* Cambia de color al pasar el mouse */
 }
 
 /* Testimonios */
 .testimonials {
-    background: #f4f4f4;
+    background: #1A132F;
     padding: 50px 0;
 }
 
 blockquote {
     background: #fff;
     padding: 15px;
-    border-left: 5px solid #333;
+    border-left: 5px solid #D9D9D9;
 }
 
 /* Pie de Página */
 footer {
-    background: #333;
+    background: #D9D9D9;
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -699,21 +722,21 @@ footer {
 }
 
 .modal-titulo {
-  color: #e75480;
+  color: #E75495;
   font-family: 'Playfair Display', serif;
   margin-bottom: 10px;
 }
 
 .modal-descripcion {
   font-size: 1rem;
-  color: #444;
+  color: #D9D9D9;
   margin-bottom: 10px;
   font-family: 'Poppins', sans-serif;
 }
 
 .modal-info-extra h3 {
   font-size: 1.1rem;
-  color: #23228f;
+  color: #1A132F;
   margin: 10px 0 5px;
 }
 
@@ -723,13 +746,13 @@ footer {
 }
 
 .precio-resaltado {
-  color: #e75480;
+  color: #E75495;
   font-size: 1.4rem;
   font-weight: bold;
 }
 
 .btn.btn-comprar-modal {
-  background-color: #e75480;
+  background-color: #E75495;
   color: #fff;
   padding: 10px 18px;
   border-radius: 25px;
@@ -742,12 +765,12 @@ footer {
 }
 
 .btn.btn-comprar-modal:hover {
-  background-color: #bf4168;
+  background-color: #A67DE5;
   transform: scale(1.05);
 }
 
 .close {
-  color: #999;
+  color: #D9D9D9;
   font-size: 28px;
   cursor: pointer;
   position: absolute;
@@ -755,7 +778,7 @@ footer {
 }
 
 .close:hover {
-  color: #e75480;
+  color: #E75495;
 }
 
 
@@ -774,7 +797,7 @@ footer {
 
 .lista-cursos-pack li {
   background: linear-gradient(90deg, #f9d5ec, #f6b1c5);
-  color: #23228f;
+  color: #1A132F;
   padding: 8px 12px;
   margin-bottom: 6px;
   border-radius: 8px;
@@ -808,7 +831,7 @@ footer {
 .detalle-cursos::before {
   width: 300px;
   height: 300px;
-  background: #ff9900;
+  background: #E75495;
   top: -50px;
   left: -100px;
 }
@@ -816,7 +839,7 @@ footer {
 .detalle-cursos::after {
   width: 400px;
   height: 400px;
-  background: #3498db;
+  background: #A67DE5;
   bottom: -100px;
   right: -150px;
 }
@@ -858,7 +881,7 @@ footer {
 
 /* Destacar el paquete completo */
 .full-package {
-  border: 2px solid #ff9900;
+  border: 2px solid #E75495;
   background-color: #fffbe6;
 }
 
@@ -921,11 +944,11 @@ footer {
 }
 
 .ingresar {
-    background-color: #444;
+    background-color: #D9D9D9;
 }
 
 .registrar {
-    background-color: #E67E22;
+    background-color: #E75495;
 }
 
 .extras {
@@ -934,7 +957,7 @@ footer {
 }
 
 .extras a {
-    color: #007BFF;
+    color: #A67DE5;
     text-decoration: none;
 }
 
@@ -956,7 +979,7 @@ footer {
     font-size: 14px; /* o 13px si la quieres más pequeña */
     font-style: italic;
     font-weight: 500;
-    color: #333;
+    color: #D9D9D9;
   }
   
   #loginModal form input {
@@ -964,7 +987,7 @@ footer {
     max-width: 300px;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #D9D9D9;
     border-radius: 5px;
   }
   
@@ -983,7 +1006,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 60px 20px;
-  background: linear-gradient(135deg, #fdfbff 0%, #f9f0ff 100%);
+  background: linear-gradient(135deg, #1A132F 0%, #4B2C6F 100%);
   max-width: 1200px;
   margin: 0 auto;
   gap: 40px;
@@ -996,21 +1019,21 @@ footer {
 
 .about-text h2 {
   font-size: 2rem;
-  color: #23228f;
+  color: #1A132F;
   margin-bottom: 10px;
   font-family: 'Playfair Display', serif;
 }
 
 .about-text h3 {
   font-size: 1.6rem;
-  color: #e75480;
+  color: #E75495;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
 .about-text p, .about-text ul {
   font-size: 1.1rem;
-  color: #333;
+  color: #D9D9D9;
   line-height: 1.6;
   font-family: 'Poppins', sans-serif;
 }
@@ -1022,7 +1045,7 @@ footer {
 }
 
 .paula-quote.espectacular {
-  background: linear-gradient(90deg, #e75480 0%, #f88fb1 100%);
+  background: linear-gradient(90deg, #E75495 0%, #f88fb1 100%);
   color: #fff;
   padding: 15px 20px;
   border-radius: 20px;
@@ -1044,7 +1067,7 @@ footer {
 }
 
 .image-frame.espectacular {
-  border: 5px solid #e75480;
+  border: 5px solid #E75495;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 12px 30px rgba(231, 84, 128, 0.3);
@@ -1099,7 +1122,7 @@ footer {
 
 
 .quienes-somos-dos {
-  background: linear-gradient(135deg, #fdfbff 0%, #f9f0ff 100%);
+  background: linear-gradient(135deg, #1A132F 0%, #4B2C6F 100%);
   padding: 60px 20px;
   position: relative;
   overflow: hidden;
@@ -1121,7 +1144,7 @@ footer {
 }
 
 .marco-rotado.espectacular {
-  border: 5px solid #e75480;
+  border: 5px solid #E75495;
   border-radius: 20px;
   transform: rotate(-2deg);
   overflow: hidden;
@@ -1146,14 +1169,14 @@ footer {
 
 .texto-derecha h3 {
   font-size: 2rem;
-  color: #e75480;
+  color: #E75495;
   margin-bottom: 15px;
   font-family: 'Playfair Display', serif;
 }
 
 .texto-derecha p {
   font-size: 1.15rem;
-  color: #23228f;
+  color: #1A132F;
   line-height: 1.7;
   font-family: 'Poppins', sans-serif;
 }
@@ -1183,26 +1206,26 @@ footer {
 /*PESTAÑA CURSOS*/
 
 .detalle-cursos {
-  background: linear-gradient(135deg, #fdfbff 0%, #f9f0ff 100%);
+  background: linear-gradient(135deg, #1A132F 0%, #4B2C6F 100%);
   padding: 60px 20px;
 }
 
 .titulo-cursos {
   text-align: center;
   font-size: 2rem;
-  color: #23228f;
+  color: #fff;
   margin-bottom: 40px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .icono-titulo {
-  color: #e75480;
+  color: #E75495;
   margin-right: 10px;
 }
 
 .tarjeta-curso {
   background: #fff;
-  border: 2px solid #e75480;
+  border: 2px solid #E75495;
   border-radius: 20px;
   padding: 25px;
   margin-bottom: 30px;
@@ -1215,14 +1238,14 @@ footer {
 }
 
 .info-curso h3 {
-  color: #e75480;
+  color: #E75495;
   font-size: 1.4rem;
   margin-bottom: 10px;
   font-family: 'Poppins', sans-serif; /* unificada para todos los títulos */
 }
 
 .info-curso p {
-  color: #333;
+  color: #D9D9D9;
   font-size: 1.05rem;
   margin-bottom: 5px;
   font-family: 'Poppins', sans-serif;
@@ -1239,7 +1262,7 @@ footer {
 .btn {
   flex: 1 1 auto;                /* Que todos ocupen mismo espacio */
   min-width: 150px;              /* Mismo mínimo para todos */
-  background-color: #23228f;
+  background-color: #1A132F;
   color: #fff;
   text-decoration: none;
   padding: 10px 18px;
@@ -1261,26 +1284,26 @@ footer {
 
 /* Botones principales como "Comprar Curso" y "Comprar Todo" */
 .btn.comprar {
-  background-color: #e75480;
+  background-color: #E75495;
 }
 
 .btn.comprar:hover {
-  background-color: #bf4168;
+  background-color: #A67DE5;
 }
 
 /* Botón especial (del pack) puede usar el mismo estilo para uniformidad */
 .btn.especial {
-  background-color: #e75480;
+  background-color: #E75495;
 }
 
 .btn.especial:hover {
-  background-color: #bf4168;
+  background-color: #A67DE5;
 }
 
 /* Botón de carrito y detalle mantienen color principal */
 .btn.btn-carrito-modal,
 .btn.visualizar {
-  background-color: #23228f;
+  background-color: #1A132F;
 }
 
 .btn.btn-carrito-modal:hover,
@@ -1290,8 +1313,8 @@ footer {
 
 /* Especial para el pack completo */
 .full-package {
-  border: 3px solid #e75480;
-  background: linear-gradient(135deg, #fdfbff 0%, #ffe6f0 100%);
+  border: 3px solid #E75495;
+  background: linear-gradient(135deg, #1A132F 0%, #ffe6f0 100%);
   box-shadow: 0 10px 25px rgba(231, 84, 128, 0.3);
 }
 
@@ -1318,7 +1341,7 @@ footer {
 }
 
 .soporte-section h2 {
-  color: #23228f;
+  color: #1A132F;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 10px;
@@ -1327,13 +1350,13 @@ footer {
 .mensaje-paula {
   text-align: center;
   font-style: italic;
-  color: #555;
+  color: #D9D9D9;
   margin-bottom: 20px;
 }
 
 #formSoporte label {
   font-weight: 600;
-  color: #23228f;
+  color: #1A132F;
 }
 
 #formSoporte input,
@@ -1341,7 +1364,7 @@ footer {
   width: 100%;
   padding: 8px 10px;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #D9D9D9;
   border-radius: 8px;
 }
 
@@ -1352,7 +1375,7 @@ footer {
 }
 
 .botones-formulario .btn {
-  background: #23228f;
+  background: #1A132F;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -1368,7 +1391,7 @@ footer {
 .info-contacto-extra {
   margin-top: 25px;
   text-align: center;
-  color: #333;
+  color: #D9D9D9;
 }
 
 .info-contacto-extra p {
@@ -1377,7 +1400,7 @@ footer {
 }
 
 .info-contacto-extra i {
-  color: #23228f;
+  color: #1A132F;
   margin-right: 8px;
 }
 
@@ -1415,7 +1438,7 @@ footer {
 
 
 .cta-experiencia {
-  background: linear-gradient(135deg, #d6b3ff 0%, #23228f 100%);
+  background: linear-gradient(135deg, #d6b3ff 0%, #1A132F 100%);
   color: #fff;
   text-align: center;
   padding: 60px 20px;
@@ -1435,7 +1458,7 @@ footer {
 .cta-content h2 {
   font-size: 2rem;
   margin-bottom: 15px;
-  color: #e75480;
+  color: #E75495;
 }
 
 .cta-content p {
@@ -1447,7 +1470,7 @@ footer {
 
 .btn-cta {
   display: inline-block;
-  background-color: #e75480;
+  background-color: #E75495;
   color: #fff;
   padding: 14px 30px;
   font-size: 1.1rem;
@@ -1458,7 +1481,7 @@ footer {
 }
 
 .btn-cta:hover {
-  background-color: #bf4168;
+  background-color: #A67DE5;
   transform: scale(1.05);
 }
 
@@ -1479,7 +1502,7 @@ footer {
 /*PARTE BAJA DE LA PAGINA CORREO Y DEMAS*/
 
 footer {
-  background: #1c1c2c; /* gris oscuro carbón */
+  background: #1A132F; /* gris oscuro carbón */
   color: #ffffff;
   padding: 40px 20px 20px;
   text-align: center;
@@ -1505,7 +1528,7 @@ footer p {
   flex: 1;
   min-width: 250px;
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid #e75480;
+  border: 1px solid #E75495;
   border-radius: 10px;
   padding: 15px;
   
@@ -1523,7 +1546,7 @@ footer p {
 }
 
 .footer-block h4 {
-  color: #e75480;
+  color: #E75495;
   margin-bottom: 8px;
   font-size: 1.1rem;
 }
@@ -1540,7 +1563,7 @@ footer p {
 }
 
 .social-icons a {
-  color: #e75480;
+  color: #E75495;
   margin: 0 10px;
   font-size: 1.5rem;
   display: inline-block;
@@ -1555,7 +1578,7 @@ footer p {
 /* Copyright */
 .copyright {
   text-align: center;
-  color: #ccc;
+  color: #D9D9D9;
   margin-top: 15px;
   font-size: 0.85rem;
 }

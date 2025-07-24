@@ -11,10 +11,10 @@
 }
 
 .modal-content {
-  background: #fff0f6;
+  background: #4B2C6F;
   margin: 20px auto;
   padding: 20px;
-  border: 2px solid #d81b60;
+  border: 2px solid #E75495;
   border-radius: 15px;
   max-width: 500px;
   width: 90%;
@@ -27,14 +27,14 @@
 
 .modal-content h2 {
   text-align: center;
-  color: #d81b60;
+  color: #E75495;
   margin-bottom: 15px;
 }
 
 /* Título */
 .pack-header h2 {
   font-size: 20px;
-  color: #d24b7c;
+  color: #E75495;
   margin-bottom: 15px;
 }
 
@@ -48,7 +48,7 @@
 .pack-list li {
   font-size: 14px;
   margin: 6px 0;
-  color: #333;
+  color: #D9D9D9;
 }
 
 /* Precios */
@@ -58,13 +58,13 @@
 }
 
 .pack-price-offer strong {
-  color: #d24b7c;
+  color: #E75495;
   font-size: 16px;
 }
 
 /* Botón pagar ahora */
 .pay-now {
-  background-color: #d24b7c;
+  background-color: #E75495;
   color: white;
   border: none;
   padding: 10px 25px;
@@ -75,7 +75,7 @@
 }
 
 .pay-now:hover {
-  background-color: #bb377d;
+  background-color: #A67DE5;
 }
 
 /* Botón cerrar */
@@ -83,12 +83,12 @@
   position: absolute;
   top: 10px; right: 15px;
   font-size: 22px;
-  color: #999;
+  color: #D9D9D9;
   cursor: pointer;
 }
 
 .close:hover {
-  color: #d24b7c;
+  color: #E75495;
 }
 
 /* Animación de entrada suave */
@@ -121,7 +121,7 @@
 /* Formulario header */
 #paymentModal h2 {
   font-size: 20px;
-  color: #d24b7c;
+  color: #E75495;
   margin-bottom: 15px;
 }
 
@@ -130,15 +130,15 @@
   max-width: 500px;
   padding: 25px;
   border-radius: 15px;
-  background: linear-gradient(145deg, #fff0f6, #fbe0ec);
+  background: linear-gradient(145deg, #4B2C6F, #4B2C6F);
   box-shadow: 0 0 20px rgba(245, 164, 203, 0.5);
-  color: #4d0039;
+  color: #D9D9D9;
 }
 
 #paymentModal h2 {
   text-align: center;
   margin-bottom: 15px;
-  color: #c2185b;
+  color: #E75495;
   font-size: 1.6em;
 }
 
@@ -148,7 +148,7 @@
 }
 
 #paymentForm label {
-  color: #d81b60;
+  color: #E75495;
   font-weight: 600;
   margin-top: 8px;
   display: block;
@@ -161,12 +161,13 @@
   width: 100%;
   padding: 8px 10px;
   margin: 6px 0;
-  border: 1px solid #d81b60;
+  border: 1px solid #A67DE5;
   border-radius: 8px;
-  background: #fff9fb;
+  background: #1A132F;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
+  color: #FFFFFF;      /* texto blanco visible */
 }
 
 #paymentForm textarea {
@@ -183,7 +184,7 @@
 
 
 .btn.enviar {
-  background-color: #d81b60;
+  background-color: #E75495;
   color: white;
   padding: 10px;
   border: none;
@@ -195,8 +196,8 @@
 }
 
 .btn.cancelar {
-  background-color: #f8bbd0;
-  color: #4d0039;
+  background-color: #A67DE5;
+  color: #FFFFFF;
   padding: 10px;
   border: none;
   border-radius: 8px;
