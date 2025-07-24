@@ -1,0 +1,70 @@
+.quienes-somos .container,
+.quienes-somos-dos .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.flex.reverse {
+  flex-direction: row-reverse;
+}
+
+
+.image-frame.espectacular {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-frame img {
+  width: 20%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-frame img:hover {
+  transform: scale(1.05);
+}
+
+
+
+.texto-bio,
+.texto-proposito {
+  flex: 1;
+  line-height: 1.7;
+  padding: 20px;               /* da más aire alrededor */
+  color: #3f1a60;        
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  font-weight: 500;
+}
+
+.texto-bio h2,
+.texto-proposito h3 {
+  margin-bottom: 1rem;
+  color: #E75495;             /* rosado elegante */
+  font-size: 1.8rem;
+}
+
+.frase-final {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.quienes-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.quienes-layout.reverse {
+  flex-direction: row-reverse;
+}
