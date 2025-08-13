@@ -1,0 +1,21 @@
+.info-contacto-extra p,
+.info-contacto-extra .whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.info-contacto-extra .whatsapp-link {
+  color: inherit;          /* usa el color del texto actual */
+  text-decoration: none;   /* sin subrayado */
+}
+
+.info-contacto-extra .whatsapp-link:hover {
+  text-decoration: underline;
+}
+
+.info-contacto-extra .fa-whatsapp {
+  font-size: 1.05rem;
+  /* Si quieres color de marca de WhatsApp, descomenta: */
+  /* color: #25D366; */
+}

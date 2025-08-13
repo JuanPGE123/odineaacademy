@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB CURSOS</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style_contacto.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -27,7 +30,7 @@
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="quienes_somos_principal.html">Quienes Somos</a></li>
-                    <li><a href="cursos_principal.html">Cursos</a></li>                    
+                    <li><a href="cursos_principal.html">Cursos</a></li>
                     <li><a href="contacto_principal.html">Contacto</a></li>
                 </ul>
             </nav>
@@ -37,33 +40,41 @@
 
     <section id="soporte" class="soporte-section">
         <div class="container">
-          <h2>💬 Contáctanos</h2>
-          <p class="mensaje-paula">💌 Paula Rojas y nuestro equipo están listos para ayudarte. Tu mensaje será respondido lo antes posible.</p>
-        
-          <form id="formSoporte">
-            <label for="nombre">Nombres Completos:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <h2>💬 Contáctanos</h2>
+            <p class="mensaje-paula">💌 Paula Rojas y nuestro equipo están listos para ayudarte. Tu mensaje será
+                respondido lo antes posible.</p>
 
-            <label for="telefono">Teléfono de Contacto:</label>
-            <input type="tel" id="telefono" name="telefono" required>
+            <form id="formSoporte">
+                <label for="nombre">Nombres Completos:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-            <label for="correo">Correo Electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
+                <label for="telefono">Teléfono de Contacto:</label>
+                <input type="tel" id="telefono" name="telefono" required>
 
-            <label for="comentarios">Comentarios:</label>
-            <textarea id="comentarios" name="comentarios" rows="5" required></textarea>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
 
-            <div class="botones-formulario">
-              <button type="submit" class="btn enviar">Enviar</button>
-              <button type="reset" class="btn limpiar">Limpiar</button>
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" rows="5" required></textarea>
+
+                <div class="botones-formulario">
+                    <button type="submit" class="btn enviar">Enviar</button>
+                    <button type="reset" class="btn limpiar">Limpiar</button>
+                </div>
+            </form>
+
+            <div class="info-contacto-extra">
+                <p><i class="fas fa-envelope"></i> contacto@odineaacademy.com</p>
+                <p>
+                    <a class="whatsapp-link" href="https://wa.me/573164390384?text=necesito%20informacion"
+                        target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp"
+                        title="Escríbenos por WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                        +57 316 439 0384 (WhatsApp)
+                    </a>
+                </p>
+                <p><i class="fas fa-clock"></i> Lunes a Viernes 8:00 a.m. – 6:00 p.m.</p>
             </div>
-          </form>
-      
-          <div class="info-contacto-extra">
-            <p><i class="fas fa-envelope"></i> contacto@odineaacademy.com</p>
-            <p><i class="fas fa-phone"></i> +57 300 000 0000 (WhatsApp)</p>
-            <p><i class="fas fa-clock"></i> Lunes a Viernes 8:00 a.m. – 6:00 p.m.</p>
-          </div>
         </div>
     </section>
 
@@ -71,7 +82,8 @@
     <footer id="contacto">
         <div class="container">
             <p><strong>Contacto:</strong> contacto@odineaacademy.com</p>
-            <p><strong>Síguenos en nuestras redes sociales</strong> y mantente informado con lo último en educación financiera.</p>
+            <p><strong>Síguenos en nuestras redes sociales</strong> y mantente informado con lo último en educación
+                financiera.</p>
 
             <div class="footer-extra">
                 <div class="footer-block">
@@ -149,7 +161,7 @@
         });
 
         const loginForm = document.getElementById("loginForm");
-        loginForm.addEventListener("submit", function(event) {
+        loginForm.addEventListener("submit", function (event) {
             event.preventDefault();
             const email = document.getElementById("email").value.trim();
             const password = document.getElementById("password").value.trim();
@@ -165,22 +177,22 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script>
+    <script>
         document.addEventListener('DOMContentLoaded', function () {
-          const form = document.getElementById('formSoporte');
-          form.addEventListener('submit', function (e) {
-            e.preventDefault();
-        
-            Swal.fire({
-              title: '¡Mensaje enviado!',
-              text: '✅ Gracias por escribirnos. Nos pondremos en contacto pronto.',
-              icon: 'success',
-              confirmButtonColor: '#23228f',
-              confirmButtonText: 'Cerrar'
+            const form = document.getElementById('formSoporte');
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                Swal.fire({
+                    title: '¡Mensaje enviado!',
+                    text: '✅ Gracias por escribirnos. Nos pondremos en contacto pronto.',
+                    icon: 'success',
+                    confirmButtonColor: '#23228f',
+                    confirmButtonText: 'Cerrar'
+                });
+
+                form.reset();
             });
-        
-            form.reset();
-          });
         });
     </script>
 
@@ -188,4 +200,5 @@
 
 
 </body>
+
 </html>
