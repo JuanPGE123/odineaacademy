@@ -818,6 +818,16 @@ footer {
   overflow: hidden;
 }
 
+/* Texto de las fichas de curso */
+.detalle-cursos .tarjeta-curso .info-curso p {
+  color: #0f1324;            /* negro azulado */
+}
+
+/* Etiquetas tipo "Contenido:", "Objetivo:" */
+.detalle-cursos .tarjeta-curso .info-curso p strong {
+  color: #5b4be2;            /* violeta elegante */
+}
+
 /* Efecto decorativo con círculos difuminados */
 .detalle-cursos::before,
 .detalle-cursos::after {

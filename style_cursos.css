@@ -1,0 +1,45 @@
+/* Modal video responsive */
+.modal-video {
+  margin-bottom: 1rem;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+#modalCursoMP4 {
+  width: 100%;
+  max-height: 320px;       /* mini video */
+  border-radius: 12px;
+}
+
+/* Botones en el modal */
+.modal-acciones {
+  display: flex;
+  gap: .75rem;
+  margin-top: 1rem;
+}
+
+.btn-volver-modal {
+  background: transparent;
+  border: 2px solid #23228f; /* combina con tu paleta violeta/azulada */
+  color: #23228f;
+  padding: .6rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-volver-modal:hover {
+  opacity: .9;
+}
